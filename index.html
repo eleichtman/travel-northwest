@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Northwest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Travel Northwest Header (need better logo?) -->
+        <div class="upper-header">
+            <nav class="nav-left">
+                <a class="site-header-logo" href=".">
+                    <img src="img/compass-clipart.svg" alt="Travel Northwest Logo">
+                    <h2>Travel Northwest</h2>
+                </a>
+            </nav>
+
+            <nav class="nav-right">
+                <div class="nav-right-mobile" id="menu-trigger">
+                    <img src="img/hamburger.svg" alt="hamburger-icon" />
+                </div>
+                <div class="nav-right-user">
+                    <ul class="nav-right-user">
+                        <li><a class="nav-right-account" href="">Create a Profile</a></li>
+                        <li><a class="nav-right-account" href="">Sign In</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="lower-header">
+            <nav class="nav-center-bar">
+                <ul class="nav-center-bar-list">
+                    <li>Accommodations</li>
+                    <li>Activities</li>
+                    <li>Dining</li>
+                    <li>California</li>
+                    <li>Oregon</li>
+                    <li>Washington</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Photo Carousel - scroll to see examples from each region -->
+        <section class="photo-carousel-container">
+
+
+            <div class="carousel-card-deck">
+                <div class="carousel-card mt-rainier-np fade">
+                    <h1 class="photo-carousel-header">Discover....</h1>
+                    <img src="img/mt-rainier-carousel.jpg" alt="Mt. Rainier" style="width:100%">
+                    <h3 class="slide-caption">Mt. Rainier National Park</h3>
+                </div>
+                <div class="carousel-card cannon-beach fade">
+                    <h1 class="photo-carousel-header">Discover....</h1>
+                    <img src="img/cannon-beach-from-ecola-small.jpg" alt="Cannon Beach" style="width:100%">
+                    <h3 class="slide-caption">Cannon Beach, Oregon Coast</h3>
+                </div>
+                <div class="carousel-card seattle-skyline fade">
+                    <h1 class="photo-carousel-header">Discover....</h1>
+                    <img src="img/space-needle-sunset-small.jpg" alt="Seattle Space Needle at Sunset"
+                        style="width:100%">
+                    <h3 class="slide-caption">Seattle, Washington</h3>
+                </div>
+
+                <!-- Next and previous buttons (see w3schools tutorial) -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+
+        </section>
+
+        <!-- Browse All Activities - Or choose a Region to filter by location -->
+        <section class="regional-activities">
+            <select class="activity-option-dropdown" name="" id="">
+                <option value="Choose a region">Choose a Region</option>
+            </select>
+
+            <div class="location-cards-container">
+                <div class="location-card oregon-coast cannon-beach-tidepools">
+                    <img src="img/starfish-cannon-beach.png" alt="">
+                    <div class="card-text-container">
+                        <h3>Cannon Beach Tidepools</h3>
+                        <p>Starfish glimmer from rocks at low tide.</p>
+                    </div>
+                </div>
+                <div class="location-card mt-hood rafting">
+                    <img src="img/white-water-rafting-small.jpg" alt="">
+                    <div class="card-text-container">
+                        <h3>Whitewater Rafting</h3>
+                        <p>Ride the waves!</p>
+                    </div>
+                </div>
+                <div class="location-card seattle glass-garden">
+                    <img src="img/chihuly-sculpture-garden.jpg" alt="">
+                    <div class="card-text-container">
+                        <h3>Chihuly Sculpture Garden</h3>
+                        <p>Glass art in the outdoors.</p>
+                    </div>
+                </div>
+                <div class="location-card seattle chocolate-tour">
+                    <img src="img/shop-theo.jpg" alt="">
+                    <div class="card-text-container">
+                        <h3>Theo Chocolate Factory</h3>
+                        <p>Free samples on the tour!</p>
+                    </div>
+                </div>
+                <div class="location-card seattle whale-watching">
+                    <img src="img/orca-pod-lighthouse.jpg" alt="">
+                    <div class="card-text-container">
+                        <h3>Whale watching</h3>
+                        <p>Orcas in the sound.</p>
+                    </div>
+                </div>
+                <div class="location-card mt-hood waterfall-hike">
+                    <img src="img/north-falls-small.jpg" alt="">
+                    <div class="card-text-container">
+                        <h3>Waterfall Trails</h3>
+                        <p>Hike the slopes of Mt. Hood.</p>
+                    </div>
+                </div>
+                <div class="location-card seattle freemont-troll">
+                    <img src="img/freemont-scavenger-hunt-small.jpg" alt="">
+                    <div class="card-text-container">
+                        <h3>Freemont Art District</h3>
+                        <p>Track down the troll on an outdoor scavenger hunt.</p>
+                    </div>
+                </div>
+                <div class="location-card seattle pike-place-market">
+                    <img src="img/pike-place-flowers-small.jpg" alt="">
+                    <div class="card-text-container">
+                        <h3>Pike Place Market</h3>
+                        <p>"The soul of Seattle."</p>
+                    </div>
+                </div>
+                <div class="location-card mt-hood lavender">
+                    <img src="img/hood-river-lavender-small.jpeg" alt="">
+                    <div class="card-text-container">
+                        <h3>Mt. Hood Lavender Farm</h3>
+                        <p>Aromatherapy for the eyes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row">
+            <p>&copy 2022, Travel Northwest</p>
+            <nav class="footer-right-nav">
+                <a href="">About</a>
+                <p>|</p>
+                <a href="">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Dropdown Menus -->
+    <aside class="hamburger-dropdown-position hamburger-dropdown-design" id="side-menu">
+        <div class="hamburger-dropdown-close" id="menu-close">
+            <img src="img/x-menu-close.svg" alt="x-icon" />
+        </div>
+        <ul class="hamburger-dropdown-list ">
+            <li>Accommodations</li>
+            <li>Activities</li>
+            <li>Dining</li>
+            <li>California</li>
+            <li>Oregon</li>
+            <li>Washington</li>
+            <li></li>
+            <li>Create a Profile</li>
+            <li>Sign In / Out</li>
+        </ul>
+    </aside>
+
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
