@@ -67,20 +67,17 @@ regions.forEach(function (region) {
     regionSelect.appendChild(regionOption);
 })
 
-
+const locationArray = document.getElementsByClassName("location-card");
 
 regionSelect.addEventListener("change", function () {
     let regionChoice = regionSelect.value;
 
     if (regionChoice === regions[0]) {
-        const locationArray = document.getElementsByClassName("location-card");
-
         for (let i = 0; i < locationArray.length; i++) {
             locationArray[i].classList.remove('hide');
         }
     }
     else if (regionChoice === regions[1]) {
-        const locationArray = document.getElementsByClassName("location-card");
         const columbiaRiverArray = document.getElementsByClassName("columbia-river");
 
         for (let i = 0; i < locationArray.length; i++) {
@@ -91,7 +88,6 @@ regionSelect.addEventListener("change", function () {
         }
     }
     else if (regionChoice === regions[2]) {
-        const locationArray = document.getElementsByClassName("location-card");
         const mtHoodArray = document.getElementsByClassName("mt-hood");
 
         for (let i = 0; i < locationArray.length; i++) {
@@ -102,7 +98,6 @@ regionSelect.addEventListener("change", function () {
         }
     }
     else if (regionChoice === regions[3]) {
-        const locationArray = document.getElementsByClassName("location-card");
         const mtRainierArray = document.getElementsByClassName("mt-rainier");
 
         for (let i = 0; i < locationArray.length; i++) {
@@ -113,7 +108,6 @@ regionSelect.addEventListener("change", function () {
         }
     }
     else if (regionChoice === regions[4]) {
-        const locationArray = document.getElementsByClassName("location-card");
         const oregonCoastArray = document.getElementsByClassName("oregon-coast");
 
         for (let i = 0; i < locationArray.length; i++) {
@@ -124,7 +118,6 @@ regionSelect.addEventListener("change", function () {
         }
     }
     else if (regionChoice === regions[5]) {
-        const locationArray = document.getElementsByClassName("location-card");
         const portlandArray = document.getElementsByClassName("portland");
 
         for (let i = 0; i < locationArray.length; i++) {
@@ -135,7 +128,6 @@ regionSelect.addEventListener("change", function () {
         }
     }
     else if (regionChoice === regions[6]) {
-        const locationArray = document.getElementsByClassName("location-card");
         const seattleArray = document.getElementsByClassName("seattle");
 
         for (let i = 0; i < locationArray.length; i++) {
