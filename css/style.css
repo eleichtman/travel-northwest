@@ -82,7 +82,7 @@ header {
 .slide-caption {
     color: #f2f2f2;
     background-color: rgb(54, 3, 56);
-    font-size: 10px;
+    font-size: 9px;
     padding: 8px 12px;
     position: absolute;
     bottom: 10px; 
@@ -173,7 +173,7 @@ hr {
 .activity-option-dropdown {
     display: block;
     width: 100%;
-    background-color: rgb(90, 133, 133);
+    background-color: teal;
     color: white;
     font-size: 20px;
     font-variant: small-caps;
@@ -364,9 +364,16 @@ footer {
     margin: 0px;
 }
 
+
+
 .nav-center-bar-list li {
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-center-bar-list li:hover {
+    color: rgb(250, 106, 10);
+    cursor: pointer;
 }
 
 /* REGIONAL PHOTO CAROUSEL */
@@ -378,9 +385,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
- /* * {box-sizing:border-box} */
-
 
 .carousel-card-deck {
     position: relative;
@@ -477,7 +481,7 @@ hr {
 
 .activity-option-dropdown {
     width: 40%;
-    background-color: rgb(64, 133, 133);
+    background-color: teal;
     color: white;
     font-size: 25px;
     margin: 20px 0 10px 0;
